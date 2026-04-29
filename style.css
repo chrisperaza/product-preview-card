@@ -49,6 +49,25 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+/* fonts */
+#main_section-header p,
+#main_section-paragraph,
+#money_small,
+#button {
+  font-family: var(--content-family);
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+}
+
+#main_section-header h1,
+#money_big {
+  font-family: var(--titles-family);
+  font-size: clamp(2.8rem, 5vw, 3rem);
+}
+
 /* body */
 #body {
   width: 100%;
@@ -56,7 +75,8 @@
 
 /* main */
 #main {
-  width: 324px;
+  width: 90%;
+  max-width: 324px;
   margin: 60px auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -66,4 +86,9 @@
 /* picture */
 #picture img {
   width: 100%;
+}
+
+/* section */
+#main_section {
+  padding: 30px;
 }
