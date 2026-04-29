@@ -1,4 +1,4 @@
-# Product Product Card
+# Product Preview Card
 
 Started on April 27, 2026
 
