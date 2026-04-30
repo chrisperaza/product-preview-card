@@ -53,6 +53,12 @@ html {
   font-size: 62.5%;
 }
 
+#main_section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 /* fonts */
 #main_section-header p,
 #main_section-paragraph,
@@ -60,6 +66,23 @@ html {
 #button {
   font-family: var(--content-family);
   font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+}
+
+#main_section-header p,
+#main_section-paragraph,
+#money_small {
+  color: var(--grey);
+  font-weight: 500;
+}
+
+#main_section-header p {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+#main_section-header h1 {
+  color: var(--black);
+  line-height: clamp(3rem, 5vw, 3.5rem);
 }
 
 #main_section-header h1,
@@ -91,4 +114,46 @@ html {
 /* section */
 #main_section {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#main_section-paragraph {
+  line-height: clamp(1.8rem, 5vw, 2.5rem);
+}
+
+#money_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+#money_big {
+  font-weight: 700;
+  color: var(--green-500);
+}
+
+#money_small {
+  text-decoration: line-through;
+}
+
+#button {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--green-500);
+  color: var(--white);
+  font-weight: 600;
+  padding: 15px 0;
+  border-radius: 8px;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: var(--green-700);
 }
