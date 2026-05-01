@@ -181,3 +181,23 @@ html {
   color: var(--green-700);
   text-decoration: underline;
 }
+
+/* desktop responsive */
+
+@media only screen and (min-width: 992px) {
+  #main {
+    display: flex;
+    flex-direction: row;
+    max-width: 648px;
+    height: fit-content;
+  }
+  #picture {
+    display: flex;
+    width: 50%;
+  }
+  #main_section {
+    width: 50%;
+    padding: 40px;
+    justify-content: space-between;
+  }
+}
